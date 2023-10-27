@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+}
+
+form {
+    display: flex;
+    padding: 10px;
+}
+
+label {
+    margin: 0px 20px
+}
+
+.chords {
+    justify-content: space-around;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 10px 50px;
+    font-size: 1.2rem;
+    background-color: white;
+}
+
+.note {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    background-color: rgb(4, 57, 84);
+    border-radius: 50%;
+    width: 30%;
+    height: auto;
+    margin: 180px auto;
+}
+
+.last-key {
+    font-size: 2rem;
+    text-align: center;
+    height: auto;
+    margin: 180px auto;
+}
+
+.black-note {
+    text-align: center;
+    font-size: 1.7rem;
+    color: white;
+    width: 30%;
+    height: auto;
+    margin: 120px auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: white;
+
+}
+
+@keyframes entrance {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 50;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
+
+.container {
+    animation: forwards;
+    background-color: rgba(0, 0, 0, 0.585);
+    padding: 20px;
+    margin: 100px 600px;
+    border: 3px solid black;
+    border-radius: 10px;
+    animation: entrance 3s;
+}
+
+.piano {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.key {
+    border: 1px solid #000;
+    width: 100px;
+    height: 400px;
+    background-color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.black-key {
+    width: 55px;
+    height: 225px;
+    background-color: black;
+    margin: 0 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+
+.black-key:nth-child(2) {
+    left: 852px;
+}
+
+.black-key:nth-child(4) {
+    left: 955px;
+}
+
+.black-key:nth-child(7) {
+    left: 1160px;
+}
+
+.black-key:nth-child(9) {
+    left: 1264px;
+}
+
+.black-key:nth-child(11) {
+    left: 1367px;
+}

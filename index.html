@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Piano</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+</head>
+
+<body>
+    <h1>Virtual Piano</h1>
+    <div class="container">
+        <div class="chords">
+            <form>
+                <label>
+                    <input type="radio" name="chord" value="c-major"> C Major
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="chord" value="f-major"> F Major
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="chord" value="a-minor"> A Minor
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="chord" value="g-major"> G Major
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="chord" value="e-major7"> E Major 7
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="chord" value="e-minor"> E Minor
+                </label>
+            </form>
+        </div>
+        <div class="piano">
+            <div class="key" data-note="C">
+                <div class="note">1</div>
+            </div>
+            <div class="key black-key" data-note="C-sharp">
+                <div class="black-note">2</div>
+            </div>
+            <div class="key" data-note="D">
+                <div class="note">3</div>
+
+            </div>
+            <div class="key black-key" data-note="D-sharp">
+                <div class="black-note">4</div>
+            </div>
+            <div class="key" data-note="E">
+                <div class="note">5</div>
+
+            </div>
+            <div class="key" data-note="F">
+                <div class="note">6</div>
+
+            </div>
+            <div class="key black-key" data-note="F-sharp">
+                <div class="black-note">7</div>
+            </div>
+            <div class="key" data-note="G">
+                <div class="note">8</div>
+
+            </div>
+            <div class="key black-key" data-note="G-sharp">
+                <div class="black-note">9</div>
+            </div>
+            <div class="key" data-note="A">
+                <div class="note">0</div>
+
+            </div>
+            <div class="key black-key" data-note="A-sharp">
+                <div class="black-note">-</div>
+            </div>
+            <div class="key" data-note="B">
+                <div class="note">=</div>
+
+            </div>
+            <div class="key" data-note="C2">
+                <div class="last-key">⬅</div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
