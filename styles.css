@@ -58,7 +58,6 @@ h1 {
     text-align: center;
     font-size: 3.5rem;
     color: white;
-
 }
 
 
@@ -101,7 +100,6 @@ h1 {
 
 .black-key:nth-child(2) {
     left: 32%;
-    background-color: #ff8177;
 }
 
 .black-key:nth-child(4) {
